@@ -1,5 +1,5 @@
 const path = require("path");
-const prices = require("./src/data/prices").priceArr;
+const prices = require("./src/data/prices");
 
 // Require the fastify framework and instantiate it
 const fastify = require("fastify")({
@@ -34,7 +34,7 @@ fastify.get("/", function (request, reply) {
 });
 fastify.get("/hinnasto", function (request, reply) {
   let params = {
-    prices: prices
+    prices: prices.pricesArr
   }
   return reply.view("/src/pages/hinnasto.hbs", params);
 });

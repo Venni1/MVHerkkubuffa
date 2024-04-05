@@ -23,11 +23,19 @@
       <h2>
         Hinnasto
       </h2>
-      <ul>
-        {{#each prices}}
-          <li>{{name}} - ${{price}}</li>
-        {{/each}}
-      </ul>
+      {{#each prices}}
+        <p>
+          {{name}}
+          -
+          {{euros}}€
+        </p>
+      {{/each}}
+      <img
+      class="logo"
+      src="https://cdn.glitch.global/d013d168-fb51-46c1-8dfb-4f2c61f7f469/JPEG-kuva-4A56-9013-64-0.jpeg?v=1712304863302"
+      alt="MV Herkkubuffan logo"
+      title="MV Herkkubuffan logo"
+    />
     </center>
 
   </body>

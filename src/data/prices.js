@@ -4,5 +4,7 @@ const pricesArr = [
   },
   {
     name: "Popcorn, lämmin", euros: "1,50"
-  },
+  }
 ];
+
+module.exports = { pricesArr };
