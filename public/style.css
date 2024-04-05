@@ -36,9 +36,9 @@ video {
 .logo {
   height: 30%;
 }
-.logo-small {
-  max-width: 25%;
-  max-height: 25%;
+nav > .center-container > .center-v > .logo-small {
+  width: 10%;
+  height: 10%;
   vertical-align: middle;
 }
 .center-container > .center-v {
@@ -48,6 +48,7 @@ video {
 }
 h1 {
   color: var(--primary);
+  
 }
 .card {
   margin: 10px;

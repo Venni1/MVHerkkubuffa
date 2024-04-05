@@ -36,6 +36,7 @@ fastify.get("/hinnasto", function (request, reply) {
   let params = {
     prices: prices
   }
+  return reply.view("/src/pages/hinnasto.hbs", params);
 });
 // A POST route to handle form submissions
 fastify.post("/", function (request, reply) {
