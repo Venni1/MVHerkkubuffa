@@ -1,12 +1,20 @@
 /* a minimalist set of CSS resets */
-
+:root {
+  --text: #1b0226;
+  --background: #faedfe;
+  --primary: #a83ed2;
+  --secondary: #f77aa7;
+  --accent: #f43f42;
+}
 /* default to border-box */
 html {
   box-sizing: border-box;
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -15,6 +23,7 @@ body {
   margin: 1rem;
   font-family: Poppins, sans-serif;
   line-height: 1.5;
+  background-color: var(--background);
 }
 
 /* images and videos max out at full width */
@@ -25,4 +34,13 @@ video {
 }
 #logo {
   height: 30%;
+}
+h1 {
+  color: var(--primary);
+}
+.card {
+  margin: 10px;
+  background-color: var(--secondary);
+  border-radius: 5px;
+  padding: 5px;
 }
