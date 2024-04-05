@@ -1,4 +1,5 @@
 const path = require("path");
+const prices = require("./src/data/prices").priceArr;
 
 // Require the fastify framework and instantiate it
 const fastify = require("fastify")({
@@ -31,7 +32,11 @@ fastify.get("/", function (request, reply) {
   // request.query.paramName <-- a querystring example
   return reply.view("/src/pages/index.hbs", params);
 });
-
+fastify.get("/hinnasto", function (request, reply) {
+  let params = {
+    prices: prices
+  }
+});
 // A POST route to handle form submissions
 fastify.post("/", function (request, reply) {
   let params = {

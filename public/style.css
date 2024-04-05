@@ -37,7 +37,9 @@ video {
   height: 30%;
 }
 .logo-small {
-  height: 20%;
+  max-width: 25%;
+  max-height: 25%;
+  vertical-align: middle;
 }
 .center-container > .center-v {
   display: flex;
