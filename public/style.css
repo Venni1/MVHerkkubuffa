@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /* a minimalist set of CSS resets */
 :root {
   --text: #1b0226;
@@ -5,6 +6,7 @@
   --primary: #a83ed2;
   --secondary: #f77aa7;
   --accent: #f43f42;
+  --font-family: Rubik;
 }
 /* default to border-box */
 html {
@@ -21,7 +23,7 @@ html {
 
 /* adjust typography defaults */
 body {
-  font-family: Poppins, sans-serif;
+  font-family: var(--font-family), sans-serif;
   color: var(--text);
   line-height: 1.5;
 }
