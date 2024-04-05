@@ -35,11 +35,12 @@ video {
 }
 .logo {
   height: 30%;
+  padding: 1vh
 }
 footer {
-  background-color: var(--accent);
+  background-color: var(--secondary);
 }
-.center-container > .center-v > .logo-small {
+.logo-small {
   width: 10%;
   height: 10%;
   vertical-align: middle;
@@ -108,7 +109,7 @@ li {
 }
 
 /* LOGO */
-.logo {
+.logo1 {
   font-size: 32px;
 }
 

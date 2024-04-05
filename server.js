@@ -28,16 +28,21 @@ fastify.get("/", function (request, reply) {
   // params is an object we'll pass to our handlebars template
   let params = {
     greeting: "Hello Node!",
-    class: "4A"
+    class: "4A",
   };
   // request.query.paramName <-- a querystring example
   return reply.view("/src/pages/index.hbs", params);
 });
 fastify.get("/hinnasto", function (request, reply) {
   let params = {
-    prices: prices.pricesArr
-  }
+    prices: prices.pricesArr,
+  };
   return reply.view("/src/pages/hinnasto.hbs", params);
+});
+fastify.get("/tietoja", function (request, reply) {
+  let params = {
+  };
+  return reply.view("/src/pages/tietoja.hbs", params);
 });
 // A POST route to handle form submissions
 fastify.post("/", function (request, reply) {
