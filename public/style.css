@@ -10,6 +10,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background-color: var(--background);
 }
 
 *,
@@ -23,7 +24,6 @@ body {
   margin: 1rem;
   font-family: Poppins, sans-serif;
   line-height: 1.5;
-  background-color: var(--background);
 }
 
 /* images and videos max out at full width */
@@ -31,16 +31,18 @@ img,
 video {
   height: auto;
   max-width: 100%;
+  max-height: 100%;
 }
 .logo {
   height: 30%;
 }
 .logo-small {
-  /height: 20%;
+  height: 20%;
 }
-.center-container {
-    display: flex;
-    align-items: center;
+.center-container > .center-v {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   color: var(--primary);
