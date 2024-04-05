@@ -47,18 +47,24 @@ video {
 }
 h1 {
   color: var(--primary);
-  
+}
+.card-container {
+  display: flex;
 }
 .card {
   margin: 10px;
   background-color: var(--secondary);
   border-radius: 5px;
   border: 1px var(--accent);
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: 1px solid black;
 }
-.card-p {
+.card > p {
   padding: 5px;
 }
-.card-h2 {
+.card > h2 {
   padding: 5px;
 }
 /* ********* NAVBAR CODE STARTS HERE ********* */
