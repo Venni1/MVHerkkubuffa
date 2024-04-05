@@ -1,7 +1,10 @@
 <html lang="fi">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="https://cdn.glitch.global/d013d168-fb51-46c1-8dfb-4f2c61f7f469/mvherkkubuffa_icon.png?v=1712321384363" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/d013d168-fb51-46c1-8dfb-4f2c61f7f469/mvherkkubuffa_icon.png?v=1712321384363"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,15 +19,53 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo1">MV Herkkubuffa</div>
 
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+
+          <li class="services">
+            <a href="/">Services</a>
+
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="/">Dropdown 1 </a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 3</a></li>
+              <li><a href="/">Dropdown 4</a></li>
+            </ul>
+
+          </li>
+
+          <li><a href="/">Pricing</a></li>
+          <li><a href="/">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
     <!-- this is the start of content -->
     <nav>
-    <div class="center-container">
-      <h1 class="center-v">
-      <img class="logo-small" src="https://cdn.glitch.global/d013d168-fb51-46c1-8dfb-4f2c61f7f469/mvherkkubuffa_icon.png?v=1712321384363">MV Herkkubuffa
-    </h1>
-      <a href="/hinnasto">Hinnasto</a>
-    </div>
+      <div class="center-container">
+        <h1 class="center-v">
+          <img
+            class="logo-small"
+            src="https://cdn.glitch.global/d013d168-fb51-46c1-8dfb-4f2c61f7f469/mvherkkubuffa_icon.png?v=1712321384363"
+          />MV Herkkubuffa
+        </h1>
+        <a href="/hinnasto">Hinnasto</a>
+      </div>
     </nav>
     <img
       class="logo"
