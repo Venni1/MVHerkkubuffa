@@ -42,5 +42,11 @@ h1 {
   margin: 10px;
   background-color: var(--secondary);
   border-radius: 5px;
+  border: 1px var(--accent);
+}
+.card-p {
+  padding: 5px;
+}
+.card-h2 {
   padding: 5px;
 }
