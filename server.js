@@ -40,9 +40,12 @@ fastify.get("/hinnasto", function (request, reply) {
   return reply.view("/src/pages/hinnasto.hbs", params);
 });
 fastify.get("/tietoja", function (request, reply) {
-  let params = {
-  };
+  let params = {};
   return reply.view("/src/pages/tietoja.hbs", params);
+});
+fastify.get("/popcorn", function (request, reply) {
+  let params = {};
+  return reply.view("/src/pages/secrets/popcorn.hbs", params);
 });
 // A POST route to handle form submissions
 fastify.post("/", function (request, reply) {

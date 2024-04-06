@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 /* a minimalist set of CSS resets */
 :root {
   --text: #1b0226;
@@ -37,7 +37,7 @@ video {
 }
 .logo {
   height: 30%;
-  padding: 1vh
+  padding: 1vh;
 }
 footer {
   background-color: var(--secondary);
@@ -134,7 +134,7 @@ li {
 
 /* DROPDOWN MENU */
 .services {
-  position: relative; 
+  position: relative;
 }
 
 .dropdown {
@@ -167,9 +167,9 @@ li {
 
 /* CHECKBOX HACK */
 
-input[type=checkbox] {
+input[type="checkbox"] {
   display: none;
-} 
+}
 
 /* HAMBURGER MENU */
 .hamburger {
@@ -180,10 +180,10 @@ input[type=checkbox] {
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
- .menu {
-    display:none;
+  .menu {
+    display: none;
     position: absolute;
-    background-color:teal;
+    background-color: teal;
     right: 0;
     left: 0;
     text-align: center;
@@ -192,7 +192,7 @@ input[type=checkbox] {
 
   .menu li:hover {
     display: inline-block;
-    background-color:#4c9e9e;
+    background-color: #4c9e9e;
     transition: 0.3s ease;
   }
 
@@ -200,7 +200,7 @@ input[type=checkbox] {
     margin-top: 12px;
   }
 
-  input[type=checkbox]:checked ~ .menu {
+  input[type="checkbox"]:checked ~ .menu {
     display: block;
   }
 
