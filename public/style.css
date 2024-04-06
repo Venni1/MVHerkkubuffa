@@ -47,6 +47,10 @@ footer {
   height: 10%;
   vertical-align: middle;
 }
+.coupon {
+  border: 3px #000000;
+  border-style: dashed;
+}
 .center-container > .center-v {
   display: flex;
   justify-content: center;

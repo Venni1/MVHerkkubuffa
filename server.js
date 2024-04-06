@@ -47,6 +47,10 @@ fastify.get("/popcorn", function (request, reply) {
   let params = {};
   return reply.view("/src/pages/secrets/popcorn.hbs", params);
 });
+fastify.get("/kuponki", function (request, reply) {
+  let params = {};
+  return reply.view("/src/pages/secrets/kubongi.hbs", params);
+});
 // A POST route to handle form submissions
 fastify.post("/", function (request, reply) {
   let params = {
